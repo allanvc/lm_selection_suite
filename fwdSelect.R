@@ -1,7 +1,8 @@
 # utf - 8
 # projeto suite de seleção de modelos 
 # função fwdSelect() realiza a seleção autmática de modelos lineares utilizando o método stepwise COM P VALOR
-#... recebe um data frame de covariáveis (cov.df) e um vetor de variável resposta (y)
+#... recebe um data frame de covariáveis (cov.df), um vetor de variável resposta (y) e o alpha a ser
+#.. utilizado na comparação
 
 
 ####################################
@@ -17,23 +18,7 @@
 #..... informando o parâmetro
 
 
-
-#####################################################
-rm(list=ls())
-# para não excluir algum objeto
-ls()
-rm(list=ls()[-7])
-
-dados<-read.csv(file.choose(), header = TRUE)
-y <- dados$y
-cov.df<-dados[,2:5]
-
-ls()
-rm(list=ls()[-c(2,3,6,7,9,10,12,13)])
-######################################################
-
-
-fwdSelection<-function(y, cov.df, alpha){
+fwdSelect<-function(y, cov.df, alpha){
   
   mod.select<-list()
   aov.mod.select<-list()

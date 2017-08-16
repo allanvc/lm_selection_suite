@@ -1,8 +1,8 @@
 # utf - 8
 # projeto suite de seleção de modelos 
 # função stepSelect() realiza a seleção autmática de modelos lineares utilizando o método stepwise COM P VALOR
-#... recebe um data frame de covariáveis (cov.df) e um vetor de variável resposta (y)
-
+#... recebe um data frame de covariáveis (cov.df), um vetor de variável resposta (y) e o alpha a ser
+#.. utilizado na comparação
 
 ####################################
 ## ideia já para modificar:
