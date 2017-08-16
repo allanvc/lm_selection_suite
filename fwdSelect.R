@@ -133,23 +133,3 @@ fwdSelect<-function(y, cov.df, alpha){
     return(c("Regression is not significant."))
   }
 }    
- 
-# poderíamos colocar opções para olhar para o p-valor ou para o R2 ou AIC separando em
-#.. funções distintas que chamaríamos de dentro da fwdSelection()
-
-fwdSelection(y, cov.df, 0.05)     
-# parece que funcionou!!!
-      
-fwdSelection(y, cov.df, 0.1)     
-
-fwdSelection(y, cov.df, 0)     
-
-fwdSelection(y, cov.df, 0.3)     
-
-cov.df2<-cov.df[,c(4,3,2,1)]      
-
-fwdSelection(y, cov.df2, 0.05)      
-# legal, parece funcionar mesmo! Ao invertermos x4 e x1 o resultado é exatamente o inverso, 
-#..como esperado!
-
-      

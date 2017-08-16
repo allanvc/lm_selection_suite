@@ -57,9 +57,3 @@ lmAll<-function(y, cov.df){
   }
   return(list(nomes_mod.l, res_mod.l, aov_mod.l) )
 }
-
-
-# melhor apresentar o summary da lm()
-
-# rm(res_mod.l, nomes_mod.l, aov_mod.l)
-resultados <- lmAll(y, cov.df)

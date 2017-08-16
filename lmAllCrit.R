@@ -73,11 +73,5 @@ lmAllCrit <- function(lm.all.l){
 # MELHOR USAR UMA LM.ALL AQUI DENTRO, AÍ A FUNÇÃO FICA MENOS AMARRADA
 #... E PODEMOS CALCULAR UMA MATRIZ DE CORRELAÇÃO E DAR UM WARNING PARA MULTICOLINEARIDADE
 
-criteria.df <- lmAllCrit(resultados)
-# ok! legal!
 
-# podemos acrescentar depois uma sugestão do melhor modelo, de acordo com
-#... a avaliação que fazemos -- igual a questão da prova
-# já seria uma diferença para o pacote 'asbios'
-
-# IDEIA DE NOME: lm_Selection ou ModelSelection
+# podemos acrescentar depois uma sugestão do melhor modelo

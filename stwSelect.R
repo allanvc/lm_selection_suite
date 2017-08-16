@@ -175,15 +175,3 @@ stwSelect<-function(y, cov.df, alpha){
       } 
     return( list(summary(mod.select[[length(mod.select)]]), aov.mod.select[[length(aov.mod.select)]]) )
   }
-
-stwSelection(y, cov.df, 0.05)
-
-stwSelection(y, cov.df, 0)
-# se tiver carregado uma variável de mesmo nome "var.select" no Environment, ele dá pau!
-
-stwSelection(y, cov.df, 0.10)
-# parece ok! pois no fwdSelection com alpha = .10 ele mantinha x4. Nesse aqui,
-#.. ele tira, conforme deveria.
-
-stwSelection(y, cov.df, 0.30)
-# aqui aceita o x4, pq seu p-valor era .20+

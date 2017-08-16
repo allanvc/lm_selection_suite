@@ -69,10 +69,3 @@ bwdSelect<-function(y, cov.df, alpha){
   }  
     
 }
-  
-  
-  
-bwdSelection(y, cov.df, 0.05)
-# parece ok!
-  
-bwdSelection(y, cov.df, 0.30)
